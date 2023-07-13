@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.card{
+    margin: 120px auto;
+    width: 320px;
+    height: 400px;
+    background: green;
+    padding: 20px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: relative;
+}
+.card_heart{
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.card_cart{
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.card_ima{
+    width: 90%;
+    transition: 0.5s;
+}
+.card_ima img{
+    margin-left: 25%;
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+.card_title,.card_price{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: chocolate;
+    transition: 0.5s;
+}
+.card_size,.card_color{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.card_size span{
+    padding: 1px 5px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+    margin: 0px 3px;
+}
+.card_color span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+.green{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+.card_action button{
+    background-color: chocolate;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.card_action{
+    transition: 0.5s;
+}
+.card:hover .card_ima{
+    transform: translateY(-90px) rotate(-20deg);
+}
+.card:hover .card_title{
+    transform: translate(-38px,-72px);
+}
+.card:hover .card_price{
+    transform: translate(-38px,-72px);
+}
+.card_size{
+    margin-top: 150px;
+}
+.card_size,.card_color,.card_action{
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover .card_size{
+    visibility: visible;
+    opacity: 100;
+    margin-top: -10px;
+    transform: translateY(-10px);
+}
+.card:hover .card_color{
+    visibility: visible;
+    opacity: 100;
+    transform: translateY(-10px);
+}
+.card:hover .card_action{
+    visibility: visible;
+    opacity: 100;
+    transform: translateY(-10px);
+}
